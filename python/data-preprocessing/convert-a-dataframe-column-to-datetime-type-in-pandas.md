@@ -1,4 +1,4 @@
-# Pandas에서 데이터 프레임 열을 Datetime으로 변환하기
+# Pandas에서 데이터 프레임 열을 Datetime 유형으로 변환하기
 
 ```to_datetime()``` 함수는 <b>Pandas</b> ```DataFrame```에 존재하는 특정 변수의 타입을 ```datetime``` 타입으로 변환시키는 메서드이다.
 
