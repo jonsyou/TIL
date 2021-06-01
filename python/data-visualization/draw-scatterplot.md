@@ -11,3 +11,13 @@ plt.plot(data_['col_1'],data_['col_2'], '.', markersize=1 )
 plt.show()
 ```
 산점도는 두 변수사이의 상관관계를 파악하는데 유용하다.
+
+```seaborn``` 라이브러리를 활용한 산점도 그리기도 가능하다.
+
+```python
+import seaborn as sns
+
+...
+
+sns.scatterplot(data_['col_1'],data_['col_2'])
+```
