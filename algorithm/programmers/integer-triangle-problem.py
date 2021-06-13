@@ -25,3 +25,27 @@ def solution(triangle):
   
 # 시간이 너무 오래 걸림
 
+
+### 제출 답 ( 2021-06-13 ) 정답!
+
+def solution(triangle):
+    ans = triangle[0]
+    
+    for i in triangle[1:]:
+        temp_ans = []
+        
+        for index, j in enumerate(i):
+            if index == 0 :
+                temp_ans.append(ans[0] + j)
+            elif index == len(i)-1:
+                temp_ans.append(ans[-1] + j)
+            else :
+                if ans[index-1] >= ans[index]:
+                    temp_ans.append(ans[index-1] + j)
+                else :
+                    temp_ans.append(ans[index] + j)
+        ans = temp_ans
+        
+    return max(ans)
+
+## 스스로 풀었다는 점에서 의미가 있음.
